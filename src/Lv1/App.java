@@ -4,11 +4,10 @@ import java.util.Scanner;
 
 public class App {
     public static void main(String[] args) {
+
         Scanner scanner = new Scanner(System.in);
 
-        String stop = " "; // exit 입력 시 종료 하기 위한 변수 생성
-
-        while (!(stop.equals("exit"))) { // stop 변수값에 exit 입력 되기 전까지 연산 반복
+        for(;;) { // break;로 빠져나오기 전까지 계속 반복
             System.out.print("첫 번째 숫자를 입력하세요: ");
             int num1 = scanner.nextInt(); // 첫 번째 숫자 입력
 
@@ -37,7 +36,10 @@ public class App {
             }
 
             System.out.println("더 계산하시겠습니까? (exit 입력 시 종료)");
-            stop = scanner.next(); // exit 입력 시 연산 종료
+            String stop = scanner.next();
+            if(stop.equals("exit")){
+                break;  // exit 입력 시 연산 종료
+            }
 
         }
     }

@@ -6,37 +6,38 @@ public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        String stop = " ";
+        String stop = " "; // exit 입력 시 종료 하기 위한 변수 생성
 
-        while (!(stop.equals("exit"))) {
+        while (!(stop.equals("exit"))) { // stop 변수값에 exit 입력 되기 전까지 연산 반복
             System.out.print("첫 번째 숫자를 입력하세요: ");
-            int firstNum = scanner.nextInt();
+            int firstNum = scanner.nextInt(); // 첫 번째 숫자 입력
 
             System.out.print("두 번째 숫자를 입력하세요: ");
-            int secondNum = scanner.nextInt();
+            int secondNum = scanner.nextInt(); // 두 번째 숫자 입력
 
             System.out.print("사칙연산 기호를 입력하세요: ");
-            char BasicArithmetic = scanner.next().charAt(0);
+            char BasicArithmetic = scanner.next().charAt(0); // 사칙연산 기호 입력
 
-            int result = 0;
+            int result = 0; // 결과 변수 생성
 
             if (secondNum == 0 && BasicArithmetic == '/') {
                 System.out.println("나눗셈 연산에서 분모(두번째 정수)에 0이 입력될 수 없습니다.");
+                // 두 번째 숫자가 0 이고 사칙연산 기호가 / 일 때 계산할 수 없으므로 '입력 될 수 없다'을 출력
             } else {
                 if (BasicArithmetic == '+') {
-                    result = firstNum + secondNum;
+                    result = firstNum + secondNum; // 사칙연산 기호가 + 일 때 덧셈
                 } else if (BasicArithmetic == '-') {
-                    result = firstNum - secondNum;
+                    result = firstNum - secondNum; // 사칙연산 기호가 - 일 때 덧셈
                 } else if (BasicArithmetic == '*') {
-                    result = firstNum * secondNum;
+                    result = firstNum * secondNum; // 사칙연산 기호가 * 일 때 덧셈
                 } else if (BasicArithmetic == '/') {
-                    result = firstNum / secondNum;
+                    result = firstNum / secondNum; // 사칙연산 기호가 / 일 때 덧셈
                 }
-                System.out.println("결과: " + result);
+                System.out.println("결과: " + result); // 연산 결과 출력
             }
 
             System.out.println("더 계산하시겠습니까? (exit 입력 시 종료)");
-            stop = scanner.next();
+            stop = scanner.next(); // exit 입력 시 연산 종료
 
         }
     }

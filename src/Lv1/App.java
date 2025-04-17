@@ -27,12 +27,14 @@ public class App {
 
             } else {
                 int result = calculator.calculate(num1, num2, operator);
+                System.out.println("결과: " + result); // 연산 결과 출력
                 calculator.getResultSave().add(result);
-                System.out.println(calculator.getResultSave());
-
             }
 
-            System.out.println("더 계산하시겠습니까? (exit 입력 시 종료)");
+            System.out.println("저장된 연산 결과 " + calculator.getResultSave());
+            calculator.removeResult();
+
+            System.out.print("더 계산하시겠습니까? (exit 입력 시 종료): " );
             String stop = scanner.next();
             if(stop.equals("exit")){
                 break;  // exit 입력 시 연산 종료

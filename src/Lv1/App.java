@@ -1,17 +1,18 @@
 package Lv1;
 
 import Lv2.Calculator;
-
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class App {
     public static void main(String[] args) {
 
         Calculator calculator = new Calculator();
+        calculator.setResultSave(new ArrayList<>());
         Scanner scanner = new Scanner(System.in);
 
         // break;로 빠져나오기 전까지 계속 반복
-        for(;;) {
+        while(true) {
             System.out.print("첫 번째 숫자를 입력하세요: ");
             int num1 = scanner.nextInt(); // 첫 번째 숫자 입력
 

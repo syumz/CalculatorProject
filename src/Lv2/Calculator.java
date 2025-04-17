@@ -1,13 +1,13 @@
 package Lv2;
 
-import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 public class Calculator {
 
     // 1. 속성
     // 연산 결과를 저장하는 변수 생성
-    private ArrayList<Integer> resultSave = new ArrayList<>();
+    private List<Integer> resultSave;
 
     // 2. 생성자
     // 기본 생성자
@@ -29,12 +29,12 @@ public class Calculator {
     }
 
     // 게터 메서드
-    public ArrayList<Integer> getResultSave() {
+    public List<Integer> getResultSave() {
         return resultSave;
     }
 
     // 세터 메서드
-    public void setResultSave(ArrayList<Integer> resultSave) {
+    public void setResultSave(List<Integer> resultSave) {
         this.resultSave = resultSave;
     }
 
@@ -44,7 +44,7 @@ public class Calculator {
         Scanner scanner = new Scanner(System.in);
         String answer = scanner.next();
         if(answer.equals("yes")){
-            getResultSave().remove(0);
+            getResultSave().removeFirst();
         }
     }
 

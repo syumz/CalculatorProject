@@ -27,11 +27,10 @@ public class App {
 
             } else {
                 int result = calculator.calculate(num1, num2, operator);
-                calculator.resultSave.add(result);
-                System.out.println(result);
+                calculator.getResultSave().add(result);
+                System.out.println(calculator.getResultSave());
 
             }
-
 
             System.out.println("더 계산하시겠습니까? (exit 입력 시 종료)");
             String stop = scanner.next();

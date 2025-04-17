@@ -1,13 +1,11 @@
 package Lv2;
 
-import java.awt.*;
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 public class Calculator {
 
     // 1. 속성
-    ArrayList<Integer> resultSave = new ArrayList<>();
+    public ArrayList<Integer> resultSave = new ArrayList<>();
 
     // 2. 생성자
 

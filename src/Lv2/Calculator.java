@@ -44,7 +44,7 @@ public class Calculator {
         Scanner scanner = new Scanner(System.in);
         String answer = scanner.next();
         if(answer.equals("yes")){
-            getResultSave().removeFirst();
+            getResultSave().remove(0);
         }
     }
 

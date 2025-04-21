@@ -1,4 +1,9 @@
 package Lv3;
 
-public class ArithmeticCalculator {
+public class ArithmeticCalculator <T>{
+
+
+
 }
+
+

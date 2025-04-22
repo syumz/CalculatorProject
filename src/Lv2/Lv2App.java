@@ -1,12 +1,10 @@
-package Lv1;
-
-import Lv2.Calculator;
+package Lv2;
 
 import java.util.ArrayList;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-public class App {
+public class Lv2App {
     public static void main(String[] args) {
 
         Calculator calculator = new Calculator();

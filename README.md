@@ -17,7 +17,9 @@
 ---
 
 ## 📂 프로젝트 구조
+```
 CalculatorProject/ ├── .gitignore ├── README.md ├── src/ │ ├── Lv1/ │ │ └── Lv1App.java │ ├── Lv2/ │ │ ├── Calculator.java │ │ └── Lv2App.java │ └── Lv3/ │ ├── ArithmeticCalculator.java │ ├── Lv3App.java │ └── OperatorType.java
+```
 
 ---
   

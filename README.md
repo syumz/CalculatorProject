@@ -8,9 +8,16 @@
 ## ⏲️ 개발 기간 
 - 2025.04.16(수) ~ 2023.04.23(수)
 
+---
+
 ## 💻 개발환경
 - **Version** : Java 17
 - **IDE** : IntelliJ
+
+---
+
+## 📂 프로젝트 구조
+CalculatorProject/ ├── .gitignore ├── README.md ├── src/ │ ├── Lv1/ │ │ └── Lv1App.java │ ├── Lv2/ │ │ ├── Calculator.java │ │ └── Lv2App.java │ └── Lv3/ │ ├── ArithmeticCalculator.java │ ├── Lv3App.java │ └── OperatorType.java
 
 ---
   

@@ -34,6 +34,12 @@ public class Lv2App {
             System.out.print("사칙연산 기호를 입력하세요('+, -, *, /'): ");
             char operator = scanner.next().charAt(0); // 사칙연산 기호 입력
 
+            // 사칙연산 이외의 값 입력시 실행
+            if(operator!='+' &&operator!='-' &&operator!='*' &&operator!='/'){
+                System.out.print("사칙연산 기호만 입력 가능합니다. 다시 입력해주세요. : ");
+                operator = scanner.next().charAt(0);
+            }
+
             // 두 정수 연산
             if (num2 == 0 && operator == '/') {
                 System.out.println("나눗셈 연산에서 분모(두번째 정수)에 0이 입력될 수 없습니다.");
